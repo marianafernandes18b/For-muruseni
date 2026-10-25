@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fi-FI">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tässä on vielä yksi yllätys...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tässä on vielä yksi yllätys...</title>
 
-<style>
-
+    <style>
         * {
             box-sizing: border-box;
         }
@@ -15,20 +14,16 @@
             margin: 0;
             min-height: 100vh;
 
-            background:
-                radial-gradient(
-                    circle at top,
-                    #17243d 0%,
-                    #0b1020 45%,
-                    #05070d 100%
-                );
+            background: radial-gradient(
+                circle at top,
+                #17243d 0%,
+                #0b1020 45%,
+                #05070d 100%
+            );
 
             color: #f4efe5;
 
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
+            font-family: Georgia, "Times New Roman", serif;
 
             display: flex;
             justify-content: center;
@@ -53,9 +48,7 @@
 
         .greeting {
             margin: 0 0 12px;
-
             color: #d4af65;
-
             font-size: 1rem;
             letter-spacing: 0.18em;
             text-transform: uppercase;
@@ -63,9 +56,7 @@
 
         .eyebrow {
             margin: 0 0 18px;
-
             color: #8f8b84;
-
             font-family: Arial, sans-serif;
             font-size: 0.7rem;
             letter-spacing: 0.3em;
@@ -74,20 +65,15 @@
 
         h1 {
             margin: 0;
-
             font-size: clamp(2.2rem, 6vw, 4.5rem);
             font-weight: 400;
-
             letter-spacing: 0.02em;
-
             color: #f4efe5;
         }
 
         .subtitle {
             margin-top: 20px;
-
             color: #b9b5ad;
-
             font-size: 1rem;
             line-height: 1.7;
         }
@@ -95,20 +81,15 @@
         .gold-line {
             width: 70px;
             height: 1px;
-
             margin: 32px auto 0;
-
             background: #d4af65;
         }
 
         .secret {
             margin-top: 28px;
-
             color: #8f8b84;
-
             font-size: 0.9rem;
             font-style: italic;
-
             line-height: 1.7;
         }
 
@@ -118,21 +99,14 @@
 
         .chapter {
             max-width: 720px;
-
             margin: 100px auto 0;
-
             padding: 50px 20px 30px;
-
-            border-top:
-                1px solid
-                rgba(212, 175, 101, 0.25);
+            border-top: 1px solid rgba(212, 175, 101, 0.25);
         }
 
         .chapter-number {
             margin: 0 0 14px;
-
             color: #d4af65;
-
             font-family: Arial, sans-serif;
             font-size: 0.7rem;
             letter-spacing: 0.3em;
@@ -140,66 +114,41 @@
 
         .chapter h2 {
             margin: 0 0 18px;
-
             color: #f4efe5;
-
             font-size: clamp(1.8rem, 4vw, 3rem);
             font-weight: 400;
         }
 
         .chapter-text {
             margin: 0;
-
             color: #b9b5ad;
-
             font-size: 1rem;
             line-height: 1.8;
         }
 
         /* =================================================
-           VIDEO
+           THE ONE — SINGLE VIDEO
            ================================================= */
 
-        .making-of-video {
-            max-width: 820px;
-
+        .the-one-video {
+            width: 100%;
+            max-width: 680px;
             margin: 20px auto 80px;
-
             padding: 0 20px;
-
             text-align: center;
         }
 
-        .making-of-video video {
+        .the-one-video video {
             display: block;
-
             width: 100%;
             height: auto;
 
             background: #03050a;
 
-            border:
-                1px solid
-                rgba(212, 175, 101, 0.18);
-
+            border: 1px solid rgba(212, 175, 101, 0.18);
             border-radius: 4px;
 
-            box-shadow:
-                0 20px 60px
-                rgba(0, 0, 0, 0.45);
-        }
-
-        .video-caption {
-            margin-top: 18px;
-
-            color: #8f8b84;
-
-            font-size: 0.8rem;
-            font-style: italic;
-
-            letter-spacing: 0.08em;
-
-            line-height: 1.6;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
         }
 
         /* =================================================
@@ -208,64 +157,46 @@
 
         .playlist-section {
             max-width: 720px;
-
             margin: 120px auto 0;
-
             padding: 70px 20px;
-
             text-align: center;
 
-            border-top:
-                1px solid
-                rgba(212, 175, 101, 0.25);
+            border-top: 1px solid rgba(212, 175, 101, 0.25);
         }
 
         .playlist-section h2 {
             margin: 0 0 20px;
-
             color: #f4efe5;
-
             font-size: clamp(1.8rem, 4vw, 3rem);
             font-weight: 400;
         }
 
         .playlist-section p {
             margin: 0 auto 35px;
-
             max-width: 560px;
-
             color: #b9b5ad;
-
             font-size: 1rem;
             line-height: 1.8;
         }
 
         .playlist-qr {
             display: inline-block;
-
             padding: 14px;
-
             background: #f4efe5;
-
             border-radius: 4px;
 
-            box-shadow:
-                0 15px 45px
-                rgba(0, 0, 0, 0.45);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
         }
 
         .playlist-qr img {
             display: block;
-
             width: min(220px, 60vw);
             height: auto;
         }
 
         .playlist-note {
             margin-top: 22px !important;
-
             color: #8f8b84 !important;
-
             font-size: 0.8rem !important;
             font-style: italic;
         }
@@ -275,49 +206,36 @@
            ================================================= */
 
         @media (max-width: 600px) {
-
             body {
-                padding:
-                    20px 12px 70px;
+                padding: 20px 12px 70px;
             }
 
             .intro {
-                padding:
-                    45px 12px 30px;
+                padding: 45px 12px 30px;
             }
 
             .chapter {
                 margin-top: 70px;
-
-                padding:
-                    40px 12px 20px;
+                padding: 40px 12px 20px;
             }
 
-            .making-of-video {
+            .the-one-video {
                 margin-bottom: 60px;
-
-                padding:
-                    0 8px;
+                padding: 0 8px;
             }
 
             .playlist-section {
                 margin-top: 80px;
-
-                padding:
-                    55px 12px;
+                padding: 55px 12px;
             }
-
         }
-
-</style>
+    </style>
 </head>
 
 <body>
-
     <main class="container">
 
         <header class="intro">
-
             <p class="eyebrow">
                 FOR MIKA HOLAPPA — 2026
             </p>
@@ -343,42 +261,26 @@
                 <br><br>
                 Tämä laulu kertoo siitä, miltä minusta tuntuu.
             </p>
-
         </header>
-
 
         <section class="content">
 
-            <!-- =================================================
-                 VIDEO — THE ONE
-                 ================================================= -->
+            <!-- VIDEO — THE ONE -->
 
-            <div class="making-of-video">
-
-                <video
-                    controls
-                    playsinline
-                    preload="metadata"
-                >
-
+            <div class="the-one-video">
+                <video controls playsinline preload="metadata">
                     <source
                         src="video-the-one/video-the-one.mp4"
                         type="video/mp4"
                     >
 
                     Selaimesi ei tue videon toistoa.
-
                 </video>
-
             </div>
 
-
-            <!-- =================================================
-                 PLAYLIST
-                 ================================================= -->
+            <!-- PLAYLIST -->
 
             <section class="playlist-section">
-
                 <h2>
                     Vielä yksi asia.
                 </h2>
@@ -390,23 +292,18 @@
                 </p>
 
                 <div class="playlist-qr">
-
                     <img
                         src="qr/playlist-qr.jpg"
                         alt="Musiikkisoittolistan QR-koodi"
                     >
-
                 </div>
 
                 <p class="playlist-note">
                     Skannaa tämä, kun olet valmis kuuntelemaan.
                 </p>
-
             </section>
 
         </section>
-
     </main>
-
 </body>
 </html>
